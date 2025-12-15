@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F4F6;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #E5E7EB;
+    padding: 16px 24px;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 32px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: #111827;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+}
+
+.nav-item:hover {
+    color: #3B82F6;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-login {
+    padding: 8px 20px;
+    background-color: #ffffff;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+    color: #3B82F6;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #EFF6FF;
+}
+
+.btn-signup {
+    padding: 8px 20px;
+    background-color: #3B82F6;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background-color: #2563EB;
+}
+
+/* ================= MAIN ================= */
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 60px 24px;
+}
+
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* ===== LEFT SECTION ===== */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.brand-name {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #3B82F6;
+    font-weight: 500;
+}
+
+.description-text {
+    font-size: 16px;
+    color: #374151;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #3B82F6;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-start {
+    width: fit-content;
+    padding: 14px 40px;
+    background-color: #3B82F6;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-start:hover {
+    background-color: #2563EB;
+}
+
+/* ===== RIGHT SECTION ===== */
+.right-section {
+    display: flex;
+    flex-direction: column;   /* IMPORTANT */
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 16px; /* espace image -> texte */
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #E5E7EB;
+    border-top: 1px solid #D1D5DB;
+    padding: 32px 24px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #3B82F6;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+    .content-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}
