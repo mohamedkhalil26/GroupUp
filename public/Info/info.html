@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tes Informations — Group-Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Après compilation SCSS -> styles.css -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__left">
+      <!-- Logo simple SVG -->
+      <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" class="logo">
+        <path fill="#3A86FF" d="M4 12c0-4.418 3.582-8 8-8h8v8c0 4.418-3.582 8-8 8H4z" />
+      </svg>
+    </div>
+    <div class="topbar__right">
+      GROUP-UP
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="back-row">
+        <button class="btn-icon btn-icon--ghost" aria-label="Retour">
+          <!-- back arrow -->
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#3A86FF" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+          </svg>
+        </button>
+        <h1 class="page-title">Tes Informations !</h1>
+      </div>
+
+      <section class="card-section">
+        <h2 class="section-title">NIVEAU :</h2>
+
+        <form class="levels">
+          <label class="level">
+            <input type="checkbox" checked />
+            <span class="level__label">Débutant</span>
+          </label>
+
+          <label class="level">
+            <input type="checkbox" checked />
+            <span class="level__label">Avancée</span>
+          </label>
+
+          <label class="level">
+            <input type="checkbox" checked />
+            <span class="level__label">Bien</span>
+          </label>
+
+          <label class="level">
+            <input type="checkbox" checked />
+            <span class="level__label">Excellent</span>
+          </label>
+        </form>
+      </section>
+
+      <section class="card-section">
+        <h2 class="section-title">Horaire disponible :</h2>
+
+        <div class="time-list">
+          <article class="time-chip">
+            <div class="time-chip__title">Mardi</div>
+            <div class="time-chip__subtitle">Sep 12 — 15 • 12:30 PM</div>
+            <button class="time-chip__edit" aria-label="Modifier horaire">
+              <!-- pencil icon -->
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#37474F" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+              </svg>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <div class="actions-row">
+        <button class="btn btn--primary">Lancer le Matching</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <div class="socials">
+          <!-- Simples icônes -->
+          <a class="social" aria-label="X / Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#111" d="M22 5.92c-.66.29-1.36.5-2.1.59a3.63 3.63 0 0 0 1.6-2 7.34 7.34 0 0 1-2.3.88 3.63 3.63 0 0 0-6.2 2.63c0 .28.03.55.09.81A10.33 10.33 0 0 1 3.17 4.9a3.64 3.64 0 0 0 1.13 4.84c-.6-.02-1.17-.18-1.66-.46v.05a3.63 3.63 0 0 0 2.92 3.56c-.28.08-.57.12-.87.12-.21 0-.42-.02-.62-.06a3.64 3.64 0 0 0 3.4 2.53A7.29 7.29 0 0 1 2 19.54a10.3 10.3 0 0 0 5.58 1.64c6.7 0 10.36-5.55 10.36-10.36v-.47A7.4 7.4 0 0 0 22 5.92z"/></svg>
+          </a>
+          <a class="social" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#111" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zM18.8 6.4a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2z"/></svg>
+          </a>
+          <a class="social" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#111" d="M10 15l5.2-3L10 9v6zM23 7s-.2-1.7-.8-2.4c-.8-.9-1.7-.9-2.1-1C16.6 3 12 3 12 3s-4.6 0-8.1.6c-.4 0-1.3.1-2.1 1C1.2 5.3 1 7 1 7S1 8.9 1 10.8v2.4C1 16.9 1.2 18.7 1.8 19.4c.8.9 1.9.9 2.4 1 1.8.3 7 .6 7 .6s4.6 0 8.1-.6c.4 0 1.3-.1 2.1-1 .6-.6.8-2.4.8-2.4V10.8c0-1.9-.2-3.8-.8-4.8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-nav">
+        <div class="footer-col">
+          <h4>Fonctionnalités</h4>
+          <ul>
+            <li>Créer ou rejoindre un groupe</li>
+            <li>Chat en temps réel</li>
+            <li>Profil étudiant personnalisé</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li>Comment ça marche</li>
+            <li>Témoignages d'utilisateurs</li>
+            <li>Nouveautés</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Cas d'utilisation</h4>
+          <ul>
+            <li>Révisions en groupe</li>
+            <li>Préparation d'examens</li>
+            <li>Partage de ressources</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
