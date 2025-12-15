@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Étudiant Compatibles — Group-Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__left">
+      <svg class="logo" width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#3A86FF" d="M4 12c0-4.418 3.582-8 8-8h8v8c0 4.418-3.582 8-8 8H4z"/>
+      </svg>
+    </div>
+    <div class="topbar__center">
+      <h1 class="app-title">Etudiant Compatibles</h1>
+    </div>
+    <div class="topbar__right">GROUP-UP</div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <!-- Groupes -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Groupes</h2>
+          <button class="chev" aria-hidden="true">›</button>
+        </div>
+
+        <ul class="groups-grid" role="list">
+          <li class="group-item">
+            <div class="avatar-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#eee"/></svg>
+            </div>
+            <button class="add-btn" aria-label="Ajouter au groupe 1">+</button>
+            <div class="group-name">Groupe 1</div>
+          </li>
+
+          <li class="group-item">
+            <div class="avatar-circle"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#eee"/></svg></div>
+            <button class="add-btn" aria-label="Ajouter au groupe 2">+</button>
+            <div class="group-name">Groupe 2</div>
+          </li>
+
+          <li class="group-item">
+            <div class="avatar-circle"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#eee"/></svg></div>
+            <button class="add-btn" aria-label="Ajouter au groupe 3">+</button>
+            <div class="group-name">Groupe 3</div>
+          </li>
+
+          <li class="group-item">
+            <div class="avatar-circle"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#eee"/></svg></div>
+            <button class="add-btn" aria-label="Ajouter au groupe 4">+</button>
+            <div class="group-name">Groupe 4</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Collègues -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Collègues</h2>
+          <button class="chev" aria-hidden="true">›</button>
+        </div>
+
+        <ul class="colleagues-grid" role="list">
+          <li class="colleague-card">
+            <div class="col-avatar">
+              <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="0" y="0" width="100" height="100" rx="8" fill="#eee"/></svg>
+            </div>
+            <div class="col-meta">
+              <a href="#" class="view-profile">Voir le profil !</a>
+              <div class="col-name">Emna</div>
+              <div class="col-actions" aria-hidden="true">
+                <button class="icon-btn like" aria-label="J'aime"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="#3A86FF" d="M12 21s-8-4.9-8-11a5 5 0 0 1 10 0v1h2a2 2 0 0 0 2-2V7h-3"/></svg></button>
+                <button class="icon-btn dislike" aria-label="Je n'aime pas"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="#9CA3AF" d="M12 3s8 4.9 8 11a5 5 0 0 1-10 0v-1H8a2 2 0 0 0-2 2v2h3"/></svg></button>
+              </div>
+            </div>
+          </li>
+
+          <li class="colleague-card">
+            <div class="col-avatar"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="0" y="0" width="100" height="100" rx="8" fill="#eee"/></svg></div>
+            <div class="col-meta">
+              <a href="#" class="view-profile">Voir le profil !</a>
+              <div class="col-name">Khalil</div>
+              <div class="col-actions">
+                <button class="icon-btn like" aria-label="J'aime"></button>
+                <button class="icon-btn dislike" aria-label="Je n'aime pas"></button>
+              </div>
+            </div>
+          </li>
+
+          <li class="colleague-card">
+            <div class="col-avatar"><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="0" y="0" width="100" height="100" rx="8" fill="#eee"/></svg></div>
+            <div class="col-meta">
+              <a href="#" class="view-profile">Voir le Porofil !</a>
+              <div class="col-name">Saif</div>
+              <div class="col-actions">
+                <button class="icon-btn like" aria-label="J'aime"></button>
+                <button class="icon-btn dislike" aria-label="Je n'aime pas"></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="spacer"></div>
+      <button class="refresh-btn" aria-label="Actualiser le résultat">
+        Actualiser le résultat
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M17.65 6.35A7.95 7.95 0 0 0 12 4V1L7 6l5 5V7c2.76 0 5 2.24 5 5 0 .34-.03.67-.09 1l1.74 1.01A7.98 7.98 0 0 0 20 12c0-2.21-.9-4.21-2.35-5.65z"/></svg>
+      </button>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <div class="socials">
+          <a class="social" aria-label="X / Twitter"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#111" d="M22 5.92c-.66.29-1.36.5-2.1.59..."/></svg></a>
+          <a class="social" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#111" d="..."/></svg></a>
+          <a class="social" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#111" d="..."/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-nav">
+        <div class="footer-col">
+          <h4>Fonctionnalités</h4>
+          <ul>
+            <li>Créer ou rejoindre un groupe</li>
+            <li>Chat en temps réel</li>
+            <li>Profil étudiant personnalisé</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li>Comment ça marche</li>
+            <li>Témoignages d'utilisateurs</li>
+            <li>Nouveautés</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Cas d'utilisation</h4>
+          <ul>
+            <li>Révisions en groupe</li>
+            <li>Préparation d'examens</li>
+            <li>Partage de ressources</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
